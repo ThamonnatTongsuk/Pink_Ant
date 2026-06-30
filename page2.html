@@ -213,12 +213,10 @@ extraQuestionText.innerHTML = `แล้วที่ว่า วันนี้
             }
 
             // ตั้งค่าสำหรับส่งอีเมล
-            const email = "anttongsuk@gmail.com";
-            const subject = "คำตอบแบบสอบถาม (เหตุผลจากข้อ 10)";
-            const bodyText = `คำตอบที่เลือก: "${selectedFinalAnswer}"\n\nเหตุผล: ${ans}`;
+
 
             // เปิดแอปอีเมลเพื่อส่งข้อความ (mailto link)
-            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+          
 
             // ซ่อนหน้าพิมพ์ตอบ แล้วโชว์หน้าจบเพื่อรับสิทธิ์
             extraQuestionSection.classList.add('hidden');
